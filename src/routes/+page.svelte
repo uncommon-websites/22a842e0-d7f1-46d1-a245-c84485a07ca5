@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+
+	// Icons
+	import IconBrain from "~icons/lucide/brain";
+	import IconTarget from "~icons/lucide/target";
+	import IconUsers from "~icons/lucide/users";
+	import IconBadgeDollarSign from "~icons/lucide/badge-dollar-sign";
+	import IconZap from "~icons/lucide/zap";
+	import IconRocket from "~icons/lucide/rocket";
 </script>
 
 <Hero
@@ -36,62 +44,97 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Fast hiring for growing teams"
+	text="Hero delivers instant access to pre-vetted candidates through AI-powered screening and behavioral assessments. We serve growing startups and small businesses who need to hire quickly but lack dedicated recruiting resources. Our platform eliminates months of searching and vetting, so you can focus on building your business instead of filling roles."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Maya Chen",
+			position: "CEO",
+			company: "Flux Technologies",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We hired our first two engineers in 6 days instead of the 3 months it took us last time. The pre-vetted candidates were phenomenal—every interview was with someone we'd actually consider hiring.",
+			image: "/generated/image-1-documentary-editorial-style-profession.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Williams",
+			position: "Co-founder",
+			company: "Prism AI",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Hero saved us over $30,000 compared to traditional recruiters. The 10% placement fee is transparent and fair, and the quality of candidates was actually higher than what we got from expensive agencies.",
+			image: "/generated/image-2-documentary-editorial-style-profession.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Sofia Rodriguez",
+			position: "Head of People",
+			company: "Vertex Labs",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The behavioral assessments gave us confidence we were making the right hires. We've brought on four people through Hero and every single one is still with us and exceeding expectations six months later.",
+			image: "/generated/image-3-documentary-editorial-style-profession.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for speed and precision"
+	subtitle="Everything you need to hire top talent without the traditional recruiting overhead."
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "AI-powered candidate screening",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Eliminate weeks of manual resume review with intelligent screening that surfaces qualified candidates instantly. Our AI evaluates skills, experience, and potential fit so you can focus on interviewing the best.",
+			icon: IconBrain
 		},
 		{
-			title: "Data Analysis",
+			title: "Behavioral assessment engine",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Go beyond technical skills to understand culture fit and working style. Reduce mis-hires with psychological assessments that predict long-term success.",
+			icon: IconTarget
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Pre-vetted talent database",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Access a curated pool of ready-to-interview candidates who have already passed our rigorous screening process. Skip sourcing entirely and move straight to conversations.",
+			icon: IconUsers
+		},
+		{
+			title: "Transparent 10% placement fee",
+			description:
+				"No hidden costs or expensive agency retainers. Pay a flat 10% fee only when you hire, making quality recruiting accessible to growing teams.",
+			icon: IconBadgeDollarSign
+		},
+		{
+			title: "Lightning-fast matching",
+			description:
+				"Receive qualified candidate shortlists in days instead of months. Our platform delivers speed without compromising on quality or cultural alignment.",
+			icon: IconZap
+		},
+		{
+			title: "Startup-optimized process",
+			description:
+				"Purpose-built for lean teams who need to hire quickly but lack dedicated recruiting resources. No recruiting expertise required to find exceptional talent.",
+			icon: IconRocket
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Your next hire is ready now"
+	subtitle="Stop waiting, start building"
+	description="While you're reading this, qualified candidates are slipping through to competitors who move faster. Hero delivers pre-vetted talent in days with transparent 10% placement fees. No agency retainers, no months of searching, no costly mis-hires."
+	imageSrc="/generated/image-a-happy-startup-founder-subtly-smiling-w.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Start hiring",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "See how it works",
+			variant: "secondary"
+		}
+	]}
+/>
