@@ -10,12 +10,30 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Hire pre-vetted talent in days, not months"
+	subtitle="AI-powered screening and behavioral assessments deliver instant access to qualified candidates for growing startups."
+	imageSrc="/generated/image-documentary-editorial-photograph-of-a-di.webp"
+	centered={false}
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Start hiring"
+		},
+		{
+			href: "/about",
+			label: "Learn more"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by growing teams"
+	logoUrls={[
+		'https://cdn.brandfetch.io/vercel.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/notion.so/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/linear.app/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/retool.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
